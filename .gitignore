@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch checkpoints and model weights (keep repo light)
+*.pt
+*.pth
+*.ckpt
+models/*.pt
+models/*.pth
+
+# Raw & Processed Datasets (DO NOT PUSH 40,000 PSV FILES TO GITHUB)
+data/raw/
+data/raw/*
+data/processed/
+data/*.csv
+data/*.psv
+*.zip
+*.tar.gz
+
+# TensorBoard logs
+runs/
+.tensorboard/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db

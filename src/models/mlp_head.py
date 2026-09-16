@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from ..utils.metrics import compute_metrics
 
 class ClinicalRiskMLP(nn.Module):
     """

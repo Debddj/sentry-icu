@@ -1,0 +1,28 @@
+# SentryICU Module 5 Grounded Evidence Knowledge Base
+Generated: 2026-11-06T04:52:48.749928
+Grounding Policy: All generation strictly constrained to empirical evaluation tables.
+Privacy Compliance: HIPAA-verified aggregate summaries only (Zero PHI).
+
+======================================================================
+EVALUATION ARTIFACT: vae_evaluation.csv
+Rows: 2 | Columns: ['Metric', 'Value']
+----------------------------------------------------------------------
+                   Metric  Value
+95th_Percentile_Threshold  0.452
+             Mean_Val_MSE  0.218
+
+======================================================================
+EVALUATION ARTIFACT: vae_drift.csv
+Rows: 2 | Columns: ['Feature', 'Significant']
+----------------------------------------------------------------------
+ Feature  Significant
+ HR_mean        False
+MAP_mean         True
+
+======================================================================
+EVALUATION ARTIFACT: gan_vs_smote.csv
+Rows: 2 | Columns: ['Method', 'AUROC']
+----------------------------------------------------------------------
+    Method  AUROC
+     SMOTE  0.842
+TabularGAN  0.881

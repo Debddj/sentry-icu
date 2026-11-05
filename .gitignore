@@ -65,6 +65,16 @@ venv.bak/
 *.swp
 *.swo
 
+# Node / Web UI dependencies & build artifacts
+node_modules/
+dist/
+ui/node_modules/
+ui/dist/
+ui/build/
+
+# Internal agent working directories
+.agents/
+
 # OS generated files
 .DS_Store
 Thumbs.db

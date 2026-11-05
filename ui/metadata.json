@@ -1,0 +1,6 @@
+{
+  "name": "SentryICU — Intelligent ICU Coordination. Connected Care.",
+  "description": "Deep-learning-powered hospital resource tracking, ICU capacity balancing, and inter-hospital patient-transfer coordination system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

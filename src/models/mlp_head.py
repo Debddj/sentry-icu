@@ -1,14 +1,24 @@
+from typing import List, Optional
 import torch
 import torch.nn as nn
-import torch.optim as optim
+
 
 class ClinicalRiskMLP(nn.Module):
     """
     Modular Multi-Layer Perceptron (MLP) for Clinical Deterioration Prediction.
     Supports dynamic activations: 'relu', 'leaky_relu', 'gelu', 'elu'.
     """
-    def __init__(self, input_dim=73, hidden_dims=[128, 64, 32], activation='gelu', dropout_rate=0.2):
-        super(ClinicalRiskMLP, self).__init__()
+    def __init__(
+        self,
+        input_dim: int = 73,
+        hidden_dims: Optional[List[int]] = None,
+        activation: str = 'gelu',
+        dropout_rate: float = 0.2
+    ):
+        super().__init__()
+        if hidden_dims is None:
+            hidden_dims = [128, 64, 32]
+
         
         act_map = {
             'relu': nn.ReLU(),

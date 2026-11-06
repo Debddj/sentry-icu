@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sentry-icu
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile
+    healthCheckPath: /api/telemetry
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_MODEL
+        value: gemini-3.7-flash
+      - key: GEMINI_API_KEY
+        sync: false

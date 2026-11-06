@@ -1,5 +1,5 @@
 # SentryICU Module 5 Grounded Evidence Knowledge Base
-Generated: 2026-11-06T04:52:48.749928
+Generated: 2026-11-06T06:13:18.111609
 Grounding Policy: All generation strictly constrained to empirical evaluation tables.
 Privacy Compliance: HIPAA-verified aggregate summaries only (Zero PHI).
 

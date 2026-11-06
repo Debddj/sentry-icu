@@ -17,3 +17,4 @@ from src.api import app
 
 # Vercel ASGI handler
 app = app
+
